@@ -18,9 +18,11 @@
 
 * 有以下功能
 
+
     * 1. 預報天氣(左)
     * 2. 建議攜帶物品(中)
     * 3. 上傳照片到電腦(Rasberry Pi 3)(右)
+
 <h2> 4. 專案所需實體材料</h2>
 
 * Rasberry Pi 3 * 1
@@ -30,9 +32,25 @@
 * 公對公杜邦線 * 7 (目的:連接Rasberry Pi與LED) 
 
 <h2> 5. 線路設計,指令表與實體照片</h2>
+
+![](https://i.imgur.com/VjEgrMd.png)
+
 <h2> 6. 程式設計</h2>
 
 <h2> 7. 影片呈現連結</h2>
-<h2> 8. 安裝教學</h2>
-<h2> 9. 可以改進或其他發想</h2>
-<h2> 10.參考資料</h2>
+
+
+
+
+<h2> 8. 可以改進或其他發想</h2>
+
+* 將Ngrok替代為heroku，開發搭配鬧鐘功能
+* 自動上傳照片功能，希望可以自動上傳到網路平台
+* 氣象API的資料處理要更有效、準確
+* 實體衣架並未完成
+
+<h2> 9.參考資料</h2>
+
+[六小時AIoT專題實作：樹莓派管家](https://medium.com/%E5%8D%81%E7%99%BE%E5%8D%83%E5%AF%A6%E9%A9%97%E5%AE%A4/%E5%85%AD%E5%B0%8F%E6%99%82aiot%E5%B0%88%E9%A1%8C%E5%AF%A6%E4%BD%9C-%E6%A8%B9%E8%8E%93%E6%B4%BE%E7%AE%A1%E5%AE%B6-39fddf4b949c)
+[Python: 透過Open Weather Map API抓取天氣資料](http://www.ducala.org/1899/python-%E9%80%8F%E9%81%8Eopen-weather-map-api%E6%8A%93%E5%8F%96%E5%A4%A9%E6%B0%A3%E8%B3%87%E6%96%99/)
+
