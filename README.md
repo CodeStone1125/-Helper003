@@ -40,6 +40,8 @@ Led燈 | 3 | 提示攜帶物品 |
 
 <h2> 5. 線路設計與實體照片</h2>
 
+<font color=#FF0000> 注意 是Rasberry pi 3 不是 arduno </font>
+
 ![](https://i.imgur.com/VjEgrMd.png)
 
 ![](https://i.imgur.com/45c1pLi.png)
@@ -93,7 +95,7 @@ led.py|測試Led燈
     ![](https://i.imgur.com/NjevHWi.png)
 
 * 3.將KEY貼到 `weather_data`的APPID
-<font color=#FF0000>注意 ' ' 也要刪掉。</font>
+<font color=#FF0000> 注意 ' ' 也要刪掉。 </font>
 
     ![](https://i.imgur.com/Rb0UXHg.png)
 
@@ -117,10 +119,10 @@ led.py|測試Led燈
 * 3.測試
     從筆電瀏覽器
     http://raspberrypi.local:5000
-    <font color=#FF0000>or</font>
+    <font color=#FF0000> or </font>
     http://rasberry的IP:5000
 
-### ngrok<font color=#FF0000>(ps:如果其他裝置想訪問ngrok的flask需要在相同區域網路下)</font>
+### ngrok<font color=#FF0000> (ps:如果其他裝置想訪問ngrok的flask需要在相同區域網路下) </font>
 
 * 1.首先請下載ngrok
     
@@ -192,7 +194,7 @@ https://manager.line.biz/
     
     ![](https://i.imgur.com/B1DC1JG.png)
     
-<font size=30 color=#FF0000>然後執行echo_bot.py就完成</font>
+<font size=30 color=#FF0000> 然後執行echo_bot.py就完成 </font>
 
     
 
