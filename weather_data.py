@@ -4,7 +4,7 @@ import json
 import urllib.request as utl
 
 def weatherget():
-    urls='http://api.openweathermap.org/data/2.5/weather?q=Taipei&units=metric&APPID=d86795050bdc37e209d5cf3fedebfb2d&lang=zh_tw' # your urls here
+    urls='http://api.openweathermap.org/data/2.5/weather?q=Taipei&units=metric&APPID='你的KEY'&lang=zh_tw' # your urls here
     r = utl.Request(urls)
 
 
