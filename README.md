@@ -1,46 +1,56 @@
 
-# 智能掛勾-Helper003
+## IOT Coat Hanger - Helper003
 
-[TOC]
+An IoT coat hanger.
 
-<h2> 1. 關於專案</h2>
+Which is pairs with your smartphone to deliver information such as weather 
+forecasts and reminds you to take essential items, like your keys, before you head out.
 
-利用Linechat bot作為操作介面， Rasberry pi 3 進行運算的操作，連接衣架利用LED燈推薦今天攜帶物品
+### Why I Want to made This Project
 
-<h2> 2. 專案導言</h2>
+To address the common frustration of modern individuals who are often in a rush to leave but 
+cannot decide what items to bring, our shelf features blinking LED lights to suggest items to carry. This is a great boon for those with decision fatigue.
 
-為了解決現代人常常趕著出門卻無法決定攜帶物品的煩惱，直接在架子閃爍led燈提示建議攜帶物品，絕對是選擇障礙者的一大福音。
+Additionally, it comes with an automatic photo storage feature and a weather forecast function, 
+providing references for when you occasionally want to make the decision on your own.
 
-順便附贈自動存取相片功能，和氣象預報功能。讓你偶爾想自己決定時也有參考依據。
+### Architecture
 
-<h2> 3. 專案構想</h2>
+The system is implement using `Python3` and operated through a `Line chatbot` interface, with a `Raspberry Pi 3` performing the
+computations, connecting to a clothes hanger that uses LED lights to recommend items to take for the day. Following table is
+the fountion I made and their explaination.
 
-此處利用LineBot的特色->圖文選單，讓你連打字都免了。
-* 使用者介面
-    * ![](https://i.imgur.com/Tc2szcp.png)
-( "https://imgur.com/a/fIo1Uc0" , "Helper003 圖文選單")
+| File Name    | Purpose                                                   |
+| ------------ | --------------------------------------------------------- |
+| `weather_data` | OpenWeather API                                           |
+| `advice.py`    | Suggests items to carry based on data from weather_data   |
+| `config.py`   | Stores various keys                                       |
+| `echo_bot.py`  | LineBot                                                   |
+| `led.py`       | Test LED lights                                           |
 
-* 有以下功能
+### GUI
+
+The rich menu is depicted with three main options, illustrated in an image hosted on Imgur (Helper003 rich menu).
+The features include:
+
+| ![](https://i.imgur.com/Tc2szcp.png) |
+|:-----------------------------------:|
+| **GUI** |
+
+### Necessary material 
+
+| Material Name | Quantity | Purpose |
+| ------------- | -------- | ------- |
+| Raspberry Pi 3 | 1 | Running code |
+| LED Lights | 3 | Indicating items to carry |
+| Sturdy Hanger | 1 | Hanging items |
+| Female-to-Female Dupont Wire | 4 | Connecting Raspberry Pi to LEDs |
+| Male-to-Male Dupont Wire | 7 | Connecting Raspberry Pi to LEDs |
 
 
-    * 1. 預報天氣(左)
-    * 2. 建議攜帶物品(中)
-    * 3. 上傳照片到電腦(Rasberry Pi 3)(右)
+### Circuit Design and Physical Photographs
 
-<h2> 4. 專案所需實體材料</h2>
-
-
-材料名稱| 數量 |  用途  
-:-: | :-: | :-: 
-Rasberry Pi 3 | 1 | 運算程式碼 |
-Led燈 | 3 | 提示攜帶物品 |
-堅固衣架 | 1 | 吊掛物品 |
-母對母杜邦線 | 4 | 連接Rasberry Pi與LED |
-公對公杜邦線 | 7 | 連接Rasberry Pi與LED |
-
-<h2> 5. 線路設計與實體照片</h2>
-
-<font color=#FF0000> 注意 是Rasberry pi 3 不是 arduno </font>
+<font color=#FF0000> Actually, I use Rasberry pi 3 instead of arduno </font>
 
 ![](https://i.imgur.com/VjEgrMd.png)
 
@@ -48,27 +58,7 @@ Led燈 | 3 | 提示攜帶物品 |
 
 ![](https://i.imgur.com/YXfZ3YA.png)
 
-
-
-<h2> 6. 程式設計</h2>
-
-
-檔名|用途  
-:-: | :-
-weather_data|OpenWeather API
-advice.py|根據 weather_data 的資料提示攜帶物品
-config.py|用來存各種Key的地方
-echo_bot.py|LineBot 
-led.py|測試Led燈
-
-<h2> 7. 影片呈現連結</h2>
-
-<a href="https://youtu.be/DrIyTpf9yvU">功能範例</a>
-
-
-
-
-
+### Additional Explanation in Chinese
 <h2> 8. 可以改進或其他發想</h2>
 
 - [ ] 將Ngrok替代為heroku，開發搭配鬧鐘功能
